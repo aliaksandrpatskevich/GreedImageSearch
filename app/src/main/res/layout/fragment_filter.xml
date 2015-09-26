@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#3a1c94fb">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tvImageSize"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tv_ImageSize"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Spinner
+            android:id="@+id/spImageSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:touchscreenBlocksFocus="false" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tvColor"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tv_Color"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <Spinner
+            android:id="@+id/spColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:touchscreenBlocksFocus="false" />
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tvType"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvColor"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tv_Type"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <Spinner
+            android:id="@+id/spType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:touchscreenBlocksFocus="false" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tvSite"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvType"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/tv_Site"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <EditText
+            android:id="@+id/etSite"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:editable="true"
+
+            android:inputType="textUri"
+            android:textAlignment="gravity"
+            android:textSize="15dp" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_button_ok"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:backgroundTint="@color/abc_secondary_text_material_dark" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/label_button_cancel"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:backgroundTint="@color/abc_secondary_text_material_dark"/>
+
+</TableLayout>
